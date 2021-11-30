@@ -1,24 +1,98 @@
 # README
+Objects in your in db
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Objects -> Model
 
-Things you may want to cover:
+Model -> Controller
 
-* Ruby version
+Controller actions -> View / Component
 
-* System dependencies
+Repeat for each object
 
-* Configuration
+Sub, Topic, Comment
+Sub Model
+  Subs Controller
+  actions ->
+  Index View = Subs
+  Show View = Sub
+  New View = SubNew
+  Edit View = SubEdit
+  create, update, destroy - model, no views but do handle in one of the above.
+Topic model
+  Topics Controller
+  actions ->
+  Index View = Subs
+  Show View = Sub
+  New View = SubNew
+  Edit View = SubEdit
+  create, update, destroy - model, no views but do handle in one of the above.
+comment Model
+  Comments Controller
+  actions ->
+  Index View = Subs
+  Show View = Sub
+  New View = SubNew
+  Edit View = SubEdit
+  create, update, destroy - model, no views but do handle in one of the above.
 
-* Database creation
+View -> pages
 
-* Database initialization
+* Make sure the parent for all of the MVC (views and controllers) Routes all done in order to move on to the child, or else error or unfinished code.
 
-* How to run the test suite
+Billboard
+  model
+  controller
+  each views
 
-* Services (job queues, cache servers, search engines, etc.)
+Artist
+  model
+  controller
+  each views
 
-* Deployment instructions
+Song
+  model
+  controller
+  each views
 
-* ...
+Billboard
+name - Top Nov Hits
+desc - popping music for nov.
+image - url to image online
+  id - 1
+
+Artist
+name - Maroon 5
+rank - 20th
+billboard_id - 1
+  id - 6
+
+Song
+  title - Payphone
+  duration - 3.45
+  album- Cell
+  artist_id - 6
+
+
+const person = {id: 12, name: 'John', age:34}
+const {id, name, age, notOnPerson} = person
+
+Views, Components
+Return
+JSX
+mash up between HTML + JS 
+{ able to run js in {} }
+<h1 class="title"> -> <h1 className="title>
+Need to have in a grouping elements
+<>
+
+</>
+
+
+<h1>title</h1>
+<p>para</p>
+*this will give you an error
+
+<>
+<h1>title</h1>
+<p>para</p>
+</>
