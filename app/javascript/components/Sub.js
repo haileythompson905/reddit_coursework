@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Sub = ({ sub }) => {
 
   const { id, name, created_at } = sub
@@ -10,6 +8,8 @@ const Sub = ({ sub }) => {
         Created: {created_at}, id: {id}
       </p>
       <a href="/">Back</a>
+      <br />
+      <a href={`/subs/${id}/topics`}>Go to topics</a>
     </>
   )
 }
